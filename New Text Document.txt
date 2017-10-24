@@ -1,0 +1,26 @@
+Please keep this information for your records:
+
+Magento Admin Info:
+
+Username:
+admin
+Email:
+lognsystems@gmail.com
+Password:
+******
+Your Store Address:
+http://localhost/magento2/
+Magento Admin Address:
+http://localhost/magento2/admin/
+Be sure to bookmark your unique URL and record it offline.
+Encryption Key:
+36f08684ab405dfe01c5d63bf440840a
+Database Info:
+
+Database Name:
+magento2
+Username:
+root
+Password:
+******
+For security, remove write permissions from these directories: 'C:/xampp/htdocs/magento2/app/etc'
