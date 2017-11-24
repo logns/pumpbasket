@@ -10,5 +10,20 @@
         <move element="product.info.stock.sku" destination="product.info.price" after="product.price.final"/>
         <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
         <move element="product.info.overview" destination="product.info.main" after="product.info.price"/>
+         
     </body>
+    
+    <referenceContainer name="content">
+        <block class="Magento\Framework\View\Element\Template"
+               name="custom.js" as="custom.js" template="Magento_Catalog::product/"/>
+    </referenceContainer>
 </page>
+
+
+<!--
+<page layout="1column" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <referenceContainer name="content">
+        <block class="Magento\Framework\View\Element\Template"
+               name="custom.js" as="custom.js" template="Magento_Catalog::product/js.phtml"/>
+    </referenceContainer>
+</page>-->

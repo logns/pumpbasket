@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1511170173;s:6:"expire";d:9999999999;s:4:"tags";s:37:"43d_LAYOUT_GENERAL_CACHE_TAG,43d_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1511525736;s:6:"expire";d:9999999999;s:4:"tags";s:37:"43d_LAYOUT_GENERAL_CACHE_TAG,43d_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -6007,6 +6007,12 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1511170173;s:6:"expire";d:9999999999;s:4:"t
    <move element="product.info.review" destination="product.info.main" before="product.info.price"/>
    <move element="product.info.overview" destination="product.info.main" after="product.info.price"/>
 </body>
+<referenceContainer name="content">
+   <block class="Magento\Framework\View\Element\Template" name="custom.js" as="custom.js" template="Magento_Catalog::product/"/>
+</referenceContainer>
+</handle><handle id="catalog_product_view1" layout="1column"><referenceContainer name="content">
+   <block class="Magento\Framework\View\Element\Template" name="custom.js" as="custom.js" template="Magento_Catalog::product/js.phtml"/>
+</referenceContainer>
 </handle><handle id="default"><body>
    <referenceContainer name="header-wrapper">
       <container name="compare-link-wrapper" label="Compare Link Wrapper" as="compare-link-wrapper" after="top.search" htmlTag="ul" htmlClass="compare wrapper">

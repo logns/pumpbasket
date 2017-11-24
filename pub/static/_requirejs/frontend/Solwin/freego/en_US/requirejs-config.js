@@ -691,6 +691,16 @@ var config = {
 };
 require.config(config);
 })();
+(function() {
+var config = {
+    map: {
+        '*' : {
+            'hello' : 'js/custom'
+        }
+    }
+};
+require.config(config);
+})();
 
 
 
