@@ -1667,3 +1667,27 @@ Stack trace:
 #19 C:\xampp\htdocs\magento2\vendor\magento\framework\App\Bootstrap.php(258): Magento\Framework\App\Http->launch()
 #20 C:\xampp\htdocs\magento2\index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http))
 #21 {main} [] []
+[2017-11-27 07:30:45] main.CRITICAL: Magento\Framework\Exception\FileSystemException: The file "C:/xampp/htdocs/magento2/var/tmp/alternative-source-css.lock" cannot be deleted Warning!unlink(C:/xampp/htdocs/magento2/var/tmp/alternative-source-css.lock): Permission denied in C:\xampp\htdocs\magento2\vendor\magento\framework\Filesystem\Driver\File.php:382
+Stack trace:
+#0 C:\xampp\htdocs\magento2\vendor\magento\framework\Filesystem\Directory\Write.php(172): Magento\Framework\Filesystem\Driver\File->deleteFile('C:/xampp/htdocs...')
+#1 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Asset\LockerProcess.php(89): Magento\Framework\Filesystem\Directory\Write->delete('tmp\\alternative...')
+#2 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Asset\PreProcessor\AlternativeSource.php(117): Magento\Framework\View\Asset\LockerProcess->unlockProcess()
+#3 C:\xampp\htdocs\magento2\vendor\magento\module-developer\Model\View\Asset\PreProcessor\PreprocessorStrategy.php(62): Magento\Framework\View\Asset\PreProcessor\AlternativeSource->process(Object(Magento\Framework\View\Asset\PreProcessor\Chain))
+#4 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Asset\PreProcessor\Pool.php(74): Magento\Developer\Model\View\Asset\PreProcessor\PreprocessorStrategy->process(Object(Magento\Framework\View\Asset\PreProcessor\Chain))
+#5 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Asset\Source.php(152): Magento\Framework\View\Asset\PreProcessor\Pool->process(Object(Magento\Framework\View\Asset\PreProcessor\Chain))
+#6 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Asset\Source.php(105): Magento\Framework\View\Asset\Source->preProcess(Object(Magento\Framework\View\Asset\File))
+#7 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Asset\File.php(150): Magento\Framework\View\Asset\Source->getFile(Object(Magento\Framework\View\Asset\File))
+#8 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Asset\MergeStrategy\Checksum.php(49): Magento\Framework\View\Asset\File->getSourceFile()
+#9 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Asset\Merged.php(97): Magento\Framework\View\Asset\MergeStrategy\Checksum->merge(Array, Object(Magento\Framework\View\Asset\File))
+#10 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Asset\Merged.php(157): Magento\Framework\View\Asset\Merged->initialize()
+#11 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Page\Config\Renderer.php(358): Magento\Framework\View\Asset\Merged->rewind()
+#12 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Page\Config\Renderer.php(251): Magento\Framework\View\Page\Config\Renderer->renderAssetHtml('<link  rel="sty...', Object(Magento\Framework\View\Asset\Merged))
+#13 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Page\Config\Renderer.php(226): Magento\Framework\View\Page\Config\Renderer->renderAssetGroup(Object(Magento\Framework\View\Asset\PropertyGroup))
+#14 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Page\Config\Renderer.php(99): Magento\Framework\View\Page\Config\Renderer->renderAssets(Array)
+#15 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Result\Page.php(235): Magento\Framework\View\Page\Config\Renderer->renderHeadContent()
+#16 C:\xampp\htdocs\magento2\vendor\magento\framework\View\Result\Layout.php(164): Magento\Framework\View\Result\Page->render(Object(Magento\Framework\App\Response\Http\Interceptor))
+#17 C:\xampp\htdocs\magento2\var\generation\Magento\Backend\Model\View\Result\Page\Interceptor.php(193): Magento\Framework\View\Result\Layout->renderResult(Object(Magento\Framework\App\Response\Http\Interceptor))
+#18 C:\xampp\htdocs\magento2\vendor\magento\framework\App\Http.php(139): Magento\Backend\Model\View\Result\Page\Interceptor->renderResult(Object(Magento\Framework\App\Response\Http\Interceptor))
+#19 C:\xampp\htdocs\magento2\vendor\magento\framework\App\Bootstrap.php(258): Magento\Framework\App\Http->launch()
+#20 C:\xampp\htdocs\magento2\index.php(39): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http))
+#21 {main} [] []

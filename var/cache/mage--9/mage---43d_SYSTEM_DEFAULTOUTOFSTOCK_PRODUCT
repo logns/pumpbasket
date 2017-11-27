@@ -1,2 +1,2 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1511525733;s:6:"expire";d:9999999999;s:4:"tags";s:37:"43d_CONFIG_SCOPES,43d_CONFIG,43d_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1511783448;s:6:"expire";d:9999999999;s:4:"tags";s:37:"43d_CONFIG_SCOPES,43d_CONFIG,43d_MAGE";}
 a:1:{s:17:"outofstockproduct";a:4:{s:16:"enableoutofstock";s:1:"1";s:21:"showstock_label_image";s:5:"label";s:15:"titleoutofstock";s:12:"Out Of Stock";s:15:"imageoutofstock";N;}}

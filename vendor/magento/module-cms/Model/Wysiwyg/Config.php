@@ -167,6 +167,7 @@ class Config extends \Magento\Framework\DataObject implements ConfigInterface
                 'add_widgets' => true,
                 'no_display' => false,
                 'encode_directives' => true,
+                
                 'baseStaticUrl' => $this->_assetRepo->getStaticViewFileContext()->getBaseUrl(),
                 'baseStaticDefaultUrl' => str_replace('index.php/', '', $this->_backendUrl->getBaseUrl())
                     . $this->filesystem->getUri(DirectoryList::STATIC_VIEW) . '/',
@@ -180,6 +181,7 @@ class Config extends \Magento\Framework\DataObject implements ConfigInterface
                 'width' => '100%',
                 'height' => '500px',
                 'plugins' => [],
+                'add_directives' => true,
             ]
         );
 
