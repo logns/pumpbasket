@@ -1,0 +1,14 @@
+ <script type="text/javascript">
+//<![CDATA[
+ require([
+    'jquery',
+    'hello'
+], function($, alert) {
+   $('.swatch-option').on('click', function(event){
+        alert({
+           content: $(event.target).parent().val()
+        })
+      })
+   }
+ );
+//]]></script>
